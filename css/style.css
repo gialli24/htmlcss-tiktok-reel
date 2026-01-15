@@ -32,6 +32,54 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
+
+	/* Inserisci qui sotto 
+	le tue regole, se necessario. */
+	display: flex;
+	padding: 20px;
+	color: white;
+
+	nav {
+		display: flex;
+		align-items: baseline;
+		gap: 4px;
+	}
+
+	nav>button {
+		padding: 2px 5px;
+		background: none;
+		border: none;
+		color: rgba(255, 255, 255, 0.474);
+		font-family: 'TikTok Sans', sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2px;
+	}
+
+	nav>button>.notification-bullet {
+		width: 7px;
+		aspect-ratio: 1;
+		background-color: rgba(255, 80, 80, 0.404);
+		border-radius: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		translate: 50% -50%;
+	}
+
+	nav>button>hr {
+		height: 2px;
+		background-color: white;
+		width: 50%;
+	}
+
+	nav>button:last-child {
+		color: white;
+	}
 }
 
 /* Footer */
