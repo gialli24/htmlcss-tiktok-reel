@@ -105,61 +105,81 @@ footer {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+
+	/* custom footer region */
 	.data-container {
 		padding: 20px;
 	}
 
 	.data-container>p {
-		font-size: 12px;
 		margin-top: 5px;
 	}
 
 	.footer-nav {
 		background-color: black;
+
 		display: flex;
 		justify-content: space-evenly;
 		align-items: baseline;
 	}
 
-	.footer-nav>a {
-		padding: 10px;
+	.footer-tab {
+		text-decoration: none;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		text-decoration: none;
-		color: rgb(123, 123, 123);
-		font-size: 20px;
+
+		padding: 20px;
+
+		font-size: 12px;
+
+		color: #fff5;
+	}
+
+	.footer-tab>.tab-icon {
 		position: relative;
+
+		font-size: 24px;
 	}
 
-	.footer-nav>a:first-child {
-		color: white;
+	.footer-nav>.active {
+		color: #fff;
 	}
 
-	.footer-nav span {
-		font-size: 10px;
-	}
-
-	.footer-nav>.add-button {
-		font-size: 20px;
-		padding: 2px 8px;
-		border-radius: 10px;
-		border-left: 4px solid cyan;
-		border-right: 4px solid rgb(255, 0, 187);
-	}
-
-	.footer-nav .notification-counter {
-		background-color: rgb(255, 29, 85);
-		color: white;
-		font-weight: bold;
-		font-size: 10px;
-		padding: 1px 5px;
-		border-radius: 20px;
+	.tab-icon>.tab-notification {
 		position: absolute;
-		right: 20px;
 		top: 0;
-		translate: 0 50%;
+		right: 0;
+		translate: 50% 0%;
+
+		padding: 0 6px;
+
+		border-radius: 10px;
+
+		font-size: 12px;
+
+		background-color: #ff4c4c;
+		color: #fff;
 	}
+
+	.footer-nav>.create-btn {
+		border: none;
+		border-radius: 10px;
+		border-right: 3px solid #ff0000;
+		border-left: 3px solid #00ffff;
+
+		padding: 2px 15px;
+
+		margin: none;
+
+		font-size: 24px;
+
+		background-color: #ffffff;
+	}
+
+
+	/* end custom footer region */
 }
 
 /* Sidebar */
@@ -182,7 +202,7 @@ footer {
 		width: 100%;
 
 		border-radius: 100%;
-		border: 2px solid white;
+		border: 2px solid #fff;
 	}
 
 	.logo>.follow-btn {
@@ -202,8 +222,8 @@ footer {
 
 		font-size: 20px;
 
-		background-color: rgb(255, 21, 114);
-		color: white;
+		background-color: #ff1515;
+		color: #fff;
 	}
 
 	.toolbar {
