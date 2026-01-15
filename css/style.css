@@ -39,13 +39,13 @@ video {
 	padding: 20px;
 	color: white;
 
-	nav {
+	.header-nav {
 		display: flex;
 		align-items: baseline;
 		gap: 4px;
 	}
 
-	nav>button {
+	.header-nav>button {
 		padding: 2px 5px;
 		background: none;
 		border: none;
@@ -60,7 +60,7 @@ video {
 		gap: 2px;
 	}
 
-	nav>button>.notification-bullet {
+	.header-nav>button>.notification-bullet {
 		width: 7px;
 		aspect-ratio: 1;
 		background-color: rgba(255, 80, 80, 0.404);
@@ -71,13 +71,13 @@ video {
 		translate: 50% -50%;
 	}
 
-	nav>button>hr {
+	.header-nav>button>hr {
 		height: 2px;
 		background-color: white;
 		width: 50%;
 	}
 
-	nav>button:last-child {
+	.header-nav>button:last-child {
 		color: white;
 	}
 }
@@ -93,6 +93,47 @@ footer {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	.data-container {
+		padding: 20px;
+	}
+
+	.data-container>p {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.footer-nav {
+		background-color: black;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: baseline;
+	}
+
+	.footer-nav>a {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		color: rgb(123, 123, 123);
+		font-size: 20px;
+	}
+
+	.footer-nav>a:first-child {
+		color: white;
+	}
+
+	.footer-nav span {
+		font-size: 10px;
+	}
+
+	.footer-nav>.add-button {
+		font-size: 20px;
+		padding: 2px 8px;
+		border-radius: 10px;
+		border-left: 4px solid cyan;
+		border-right: 4px solid rgb(255, 0, 187);
+	}
 }
 
 /* Sidebar */
