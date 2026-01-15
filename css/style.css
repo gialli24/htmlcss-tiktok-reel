@@ -117,6 +117,7 @@ footer {
 		text-decoration: none;
 		color: rgb(123, 123, 123);
 		font-size: 20px;
+		position: relative;
 	}
 
 	.footer-nav>a:first-child {
@@ -133,6 +134,19 @@ footer {
 		border-radius: 10px;
 		border-left: 4px solid cyan;
 		border-right: 4px solid rgb(255, 0, 187);
+	}
+
+	.footer-nav .notification-counter {
+		background-color: rgb(255, 29, 85);
+		color: white;
+		font-weight: bold;
+		font-size: 10px;
+		padding: 1px 5px;
+		border-radius: 20px;
+		position: absolute;
+		right: 20px;
+		top: 0;
+		translate: 0 50%;
 	}
 }
 
