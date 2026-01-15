@@ -75,6 +75,7 @@ video {
 		.active-underline {
 			width: 50%;
 			height: 3px;
+
 			background-color: #fff;
 		}
 	}
@@ -89,6 +90,8 @@ video {
 
 		color: #f007;
 	}
+
+	/* end custom header region */
 }
 
 /* Footer */
@@ -169,52 +172,67 @@ footer {
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 5px;
-
+	/* custom sidebar region */
 	.logo {
 		position: relative;
-		margin-bottom: 10px;
+		width: 50px;
 	}
 
 	.logo>img {
-		width: 40px;
+		width: 100%;
+
 		border-radius: 100%;
-		border: 3px solid white;
+		border: 2px solid white;
 	}
 
-	.logo>i {
-		position: absolute;
-		background-color: rgb(255, 29, 85);
-		bottom: 0;
-		left: 0;
-		translate: 50% 25%;
-		color: white;
-		width: 20px;
-		aspect-ratio: 1;
-		text-align: center;
-		border-radius: 100%;
-	}
-
-	button {
-		padding: 10px;
+	.logo>.follow-btn {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		text-decoration: none;
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		translate: -50% 25%;
+
+		height: 20px;
+		width: 20px;
+
+		border-radius: 100%;
+
+		font-size: 20px;
+
+		background-color: rgb(255, 21, 114);
 		color: white;
-		font-size: 26px;
+	}
+
+	.toolbar {
+		margin-top: 40px;
+	}
+
+	.toolbar-btn {
 		background: none;
 		border: none;
-		gap: 2px;
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		margin-top: 30px;
+
+		font-size: 16px;
+		font-weight: 600;
+
+		color: #fff;
 	}
 
-	button>span {
-		font-size: 12px;
-		font-weight: 600;
+	.toolbar-btn-icon {
+		font-size: 30px;
 	}
+
+	/* end custom sidebar region */
 }
 
 /* ---------------------
