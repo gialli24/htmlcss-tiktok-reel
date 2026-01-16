@@ -39,7 +39,7 @@ video {
 	/* custom header region */
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	padding: 20px;
 
 	.header-icon {
@@ -57,9 +57,6 @@ video {
 		border: none;
 
 		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		gap: 5px;
 
 		font-family: 'TikTok Sans', sans-serif;
@@ -69,26 +66,35 @@ video {
 		color: #fff5;
 	}
 
-	.header-nav>.active {
-		color: white;
+	.header-nav>.notification-badge::after {
+		content: "";
+		display: block;
 
-		.active-underline {
-			width: 50%;
-			height: 3px;
-
-			background-color: #fff;
-		}
-	}
-
-	.header-nav-btn>.notification-badge {
 		position: absolute;
 		top: 0;
-		right: -5px;
-		translate: 50% -50%;
+		left: 100%;
+		transform: translateY(-50%);
 
-		font-size: 40px;
+		width: 6px;
+		height: 6px;
 
-		color: #f007;
+		border-radius: 100%;
+
+		background-color: #ff151589;
+	}
+
+	.header-nav>.active {
+		color: white;
+	}
+
+	.header-nav>.active::after {
+		content: "";
+		display: block;
+		width: 2rem;
+		height: 3px;
+
+		margin: 4px auto 0;
+		background-color: white;
 	}
 
 	/* end custom header region */
